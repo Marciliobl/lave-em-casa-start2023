@@ -1,0 +1,65 @@
+.welcome-container{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    min-height: 300px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.payment-section{
+    width: 25%;
+    min-height: 300px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+}
+
+h2{
+    color: #FFFFFF;
+}
+
+p{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.btn-payment{
+    border: 2px #FFFFFF solid;
+    background-color: transparent;
+    border-radius: 20px;
+    height: 45px;
+    font-size: 15px;
+}
+
+.ads-area{
+    width: 100%;
+    min-height: 400px;
+    /*background-color: cornflowerblue;*/
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ads-section{
+    background-color: cornflowerblue;
+    min-height: 40%;
+    width: 80%;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.ads-title{
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.description-paragraph{
+    margin-bottom: 40px;
+    font-size: 17px;
+}

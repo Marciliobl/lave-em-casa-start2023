@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Energia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Consumo de Energia</h2>
+        <label for="price">Preço do kWh na sua cidade (em reais):</label>
+        <input type="number" id="price" step="0.01">
+
+        <label for="power">Consumo da máquina de lavar (em kWh):</label>
+        <input type="number" id="power" step="0.01">
+
+        <button onclick="calculateCost()">Calcular</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateCost() {
+            const pricePerKwh = parseFloat(document.getElementById("price").value);
+            const powerConsumption = parseFloat(document.getElementById("power").value);
+            const cycleDurationHours = 1;
+            const cycleDurationMinutes = 10;
+            const cycleDurationInHours = cycleDurationHours + cycleDurationMinutes / 60;
+            const totalCost = pricePerKwh * powerConsumption * cycleDurationInHours;
+
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `O custo estimado é de R$ ${totalCost.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

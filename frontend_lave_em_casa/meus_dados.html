@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/telas/meus_dados_style.css">
+    <link rel="stylesheet" href="style/estilosReutilizaveis/footer.css">
+    <link rel="stylesheet" href="style/estilosReutilizaveis/menu.css">
+    <script src="js/hamburguer_menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="logo-menu" src="img/logopngpequena.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="home.html" onclick="voltar()" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="anuncios_criados.html">Anuncios Criados</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="home.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="anuncios_criados.html" class="nav-link">Anuncios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+    </header>
+    <section class="meus-dados">
+        <h1>Meus Dados</h1>
+        <div class="card-dados">
+            <div class="row-dados">
+                <div class="column-dados">
+                    <p class="text-dados">Nome:</p>
+                    <p class="text-dados">Sobrenome:</p>
+                    <p class="text-dados">CPF:</p>
+                    <p class="text-dados">Email:</p>
+                    <p class="text-dados">Datas de nascimento:</p>
+                    <p class="text-dados">Telefone:</p>
+                </div>
+                <div class="column-dados">
+                    <p class="text-dados">Matheus</p>
+                    <p class="text-dados">Gabriel</p>
+                    <p class="text-dados">321.321.321-44</p>
+                    <p class="text-dados">matheus.gabriel33@gmail.com</p>
+                    <p class="text-dados">12/04/2003</p>
+                    <p class="text-dados">(81)99344-5232</p>
+                </div>
+            </div>
+            <button class="button-dados">Plano Assinado</button>
+            <button class="button-dados">Altere sua senha</button>
+        </div>
+    </section>
+
+
+    <script src="js/anuncios_criados.js"></script>
+    <script src="js/hamburguer_menu.js"></script>
+</body>
+
+</html>

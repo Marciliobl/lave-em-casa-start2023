@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Anúncio</title>
+    <link rel="stylesheet" href="style/telas/detalhes_anuncios_style.css">
+    <!-- Adicione seus estilos CSS e scripts JS aqui, se necessário -->
+</head>
+
+<body>
+    <h1 class="title-detalhes">Detalhes do Anúncio</h1>
+    <div id="detalhesContainer">
+        <h3 id="tituloDetalhes"></h3>
+        <p id="descricaoDetalhes"></p>
+        <p id="valorDetalhes"></p>
+        <button id="efetuarPagamentoBtn">Efetuar Pagamento</button>
+    </div>
+
+    <script>
+        // Obter os dados do anúncio da query string
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        if (urlParams.has('dados')) {
+            var dadosAnuncio = JSON.parse(decodeURIComponent(urlParams.get('dados')));
+        } else {
+            console.log('O parâmetro "dados" não está presente na URL.');
+        }
+
+        // Atualizar os elementos com os detalhes do anúncio
+        var tituloDetalhes = document.getElementById('tituloDetalhes');
+        var descricaoDetalhes = document.getElementById('descricaoDetalhes');
+        var valorDetalhes = document.getElementById('valorDetalhes');
+
+        tituloDetalhes.textContent = dadosAnuncio.titulo;
+        descricaoDetalhes.textContent = dadosAnuncio.descricao;
+        valorDetalhes.textContent = 'Valor da Lavagem: R$ ' + dadosAnuncio.valorLavagem.toFixed(2);
+
+        // Adicionar evento de clique para o botão "Efetuar Pagamento"
+        var efetuarPagamentoBtn = document.getElementById('efetuarPagamentoBtn');
+        efetuarPagamentoBtn.addEventListener('click', function () {
+            // Aqui você pode adicionar a lógica para efetuar o pagamento
+            // Por exemplo, redirecionar para outra página de pagamento
+            alert('Pagamento efetuado com sucesso!');
+        });
+    </script>
+</body>
+
+</html>

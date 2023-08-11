@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  flex: 1;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.card-anuncios {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 20rem;
+  height: auto;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .valor-lavagem {
+  font-weight: bold;
+}
+
+.button-editar {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.back-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-button button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.titulo-barrinha {
+  border: none;
+  border-top: 2px solid black;
+  width: 20rem;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos adicionais para a grade de cards */
+#anunciosContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+footer {
+  background-color: #2E8B57;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #anunciosContainer {
+    grid-template-columns: 1fr;
+    /* Altera para uma coluna única em dispositivos móveis */
+  }
+}

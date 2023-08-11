@@ -1,0 +1,377 @@
+.tela-de-servi-o,
+.tela-de-servi-o * {
+    box-sizing: border-box;
+}
+
+.tela-de-servi-o {
+    background: #ffffff;
+    width: 1447px;
+    height: 878px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.agendar {
+    color: #000000;
+    text-align: left;
+    font: 700 14px/120% 'Montserrat', sans-serif;
+    position: absolute;
+    left: 1109px;
+    top: 24px;
+}
+
+.nossos-servi-os {
+    color: #0038ff;
+    text-align: left;
+    font: 400 32px/120% 'Montserrat', sans-serif;
+    position: absolute;
+    left: 54px;
+    top: 137px;
+}
+
+.pre-o-imbat-vel-a-partir-de-r-15-00-para-lavar-at-10-pe-as-lave-e-seque-bem-perto-da-sua-casa-ou-trabalho-pagamento-em-dinheiro-d-bit {
+    color: #070000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins',
+        sans-serif;
+    position: absolute;
+    left: 20px;
+    top: 283px;
+    width: 529px;
+    height: 157px;
+}
+
+.rectangle-15 {
+    border-radius: 15px;
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    left: 28px;
+    top: 337px;
+}
+
+.rectangle-18 {
+    border-radius: 15px;
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    left: 28px;
+    top: 361px;
+}
+
+.rectangle-17 {
+    border-radius: 15px;
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    left: 28px;
+    top: 385px;
+}
+
+.rectangle-16 {
+    border-radius: 15px;
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    left: 28px;
+    top: 289px;
+}
+
+.line-3 {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 52px;
+    height: 0px;
+    position: absolute;
+    left: 541px;
+    top: 47px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+.higieniza-o-avulsa {
+    color: #000203;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 56px;
+    top: 228px;
+}
+
+.proprietario-da-maqu-na {
+    color: #0038ff;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 689px;
+    top: 223px;
+}
+
+.line-4 {
+    border-style: solid;
+    border-color: #fffcfc;
+    border-width: 1px 0 0 0;
+    width: 424px;
+    height: 0px;
+    position: absolute;
+    left: 623px;
+    top: 156px;
+    transform-origin: 0 0;
+    transform: rotate(89.73deg) scale(1, 1);
+}
+
+.rectangle-39 {
+    background: #0d346e;
+    width: 1461px;
+    height: 123px;
+    position: absolute;
+    left: -14px;
+    top: 757px;
+}
+
+.para-os-propriet-rios-compartilhe-sua-m-quina-e-ganhe-uma-renda-extra {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 689px;
+    top: 305px;
+    width: 495px;
+}
+
+.como-funciona {
+    color: #0038ff;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 42px;
+    top: 448px;
+}
+
+.como-funciona2 {
+    color: #0038ff;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 689px;
+    top: 398px;
+}
+
+.busque-m-quinas-pr-ximas {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 35px;
+    top: 507px;
+}
+
+.fa-a-sua-reserva {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 35px;
+    top: 542px;
+}
+
+.leve-seu-cesto-de-roupa-at-a-casa-do-proprietario-e-fa-a-sua-lavagem {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 35px;
+    top: 574px;
+    width: 511px;
+}
+
+.cadastre-sua-m-quina {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 689px;
+    top: 448px;
+}
+
+.aceite-as-reservas {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 689px;
+    top: 476px;
+}
+
+.realize-a-coleta-e-devolu-o-das-roupas-na-porta-da-sua-casa {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 689px;
+    top: 507px;
+    width: 495px;
+    height: 43px;
+}
+
+.receba-sua-renda-extra {
+    color: #000000;
+    text-align: left;
+    font: 400 20px/120% 'Poppins', sans-serif;
+    position: absolute;
+    left: 688px;
+    top: 563px;
+}
+
+.line-10 {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 652px;
+    height: 0px;
+    position: absolute;
+    left: 639px;
+    top: 81px;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+}
+
+.group-6 {
+    position: absolute;
+    inset: 0;
+}
+
+.group-2 {
+    width: 1280px;
+    height: 84px;
+    position: static;
+}
+
+.group-1 {
+    width: 1280px;
+    height: 84px;
+    position: static;
+}
+
+.rectangle-2 {
+    background: #ffffff;
+    width: 1280px;
+    height: 84px;
+    position: absolute;
+    left: 0px;
+    top: 11px;
+}
+
+.frame-35 {
+    width: 312px;
+    height: 17px;
+    position: absolute;
+    left: 648px;
+    top: 42px;
+}
+
+.frame-34 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.servi-os {
+    color: #000000;
+    text-align: left;
+    font: 400 14px/120% 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.contato {
+    color: #000000;
+    text-align: left;
+    font: 400 14px/120% 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.sobre {
+    color: #000000;
+    text-align: left;
+    font: 400 14px/120% 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.home {
+    color: #000000;
+    text-align: left;
+    font: 400 14px/120% 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.pacotes {
+    color: #000000;
+    text-align: left;
+    font: 400 14px/120% 'Montserrat', sans-serif;
+    position: absolute;
+    left: 993px;
+    top: 42px;
+}
+
+.logopng-3 {
+    width: 276px;
+    height: 62px;
+    position: absolute;
+    left: -82px;
+    top: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #73a1dd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #395cbd;
+}
+
+.pacotes {
+    display: flex;
+    gap: 10px;
+}
+
+.pacotes {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pacotes:hover {
+    background-color: #1976D2;
+}

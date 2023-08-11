@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilosReutilizaveis/menu.css">
+    <link rel="stylesheet" href="style/estilosReutilizaveis/footer.css">
+    <link rel="stylesheet" href="style/telas/home_style.css">
+    <script src="https://kit.fontawesome.com/f23817a8b3.js" crossorigin="anonymous"></script>
+    <script src="js/hamburguer_menu.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="logo-menu" src="img/logopngpequena.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" onclick="voltar()" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="anuncios_criados.html" class="nav-link">Anuncios</a></li>
+                    <li class="nav-item"><a href="escolha_tipo_login.html" class="nav-link"> Cadastrar</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login_proprietario.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="anuncios_criados.html" class="nav-link">Anuncios</a></li>
+                <li class="nav-item"><a href="escolha_tipo_login.html" class="nav-link">Cadastro</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+    </header>
+
+    <section class="section-title">
+        <div class="row-first-session">
+            <div class="div-titulo-home">
+                <h1 class="titulo-home">O JEITO MAIS PERTO, FÁCIL E ECONÔMICO DE LAVAR ROUPAS</h1>
+            </div>
+            <img class="image-title" src="img/WhatsApp Image 2023-07-19 at 23.56.19.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="section-solucoes">
+        <div class="container">
+            <div class="row-second-section">
+                <img class="img-second-section" src="img/HOMEM TITULO.png" alt="">
+                <div class="column-second-section">
+                    <h2 class="title-second-section">ENCONTRE UMA SOLUÇÃO PRÁTICA E ECONOMICA PARA SUAS NECESSIDADES DE
+                        LAVANDERIA </h2>
+                    <div class="row">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3 class="subtitle-second-section">Economia de tempo: Evite o estresse das lavanderias
+                            tradicionais e economize tempo e dinheiro ao
+                            alugar uma máquina de lavar próxima à sua casa ou trabalho.</h3>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3 class="subtitle-second-section"> Conveniência: Não se preocupe com o deslocamento até uma
+                            lavanderia. Com o Lave em casa, você
+                            encontrará uma máquina de lavar próxima, tornando a lavagem de roupas uma tarefa fácil e
+                            acessível.
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3 class="subtitle-second-section">Avaliações e confiabilidade: Nossa plataforma conta com
+                            avaliações de usuários, garantindo que você
+                            possa confiar na qualidade e no desempenho das máquinas de lavar disponíveis.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-como-funciona">
+        <div class="container">
+            <h3 class="title-terceira-section">COMO FUNCIONA?</h3>
+            <div class="row-container-terceira">
+                <div class="column">
+                    <div class="container-roda"></div>
+                    <h4 class="text-roda">Encontre uma Máquina de Lavar
+                        próxima a sua residência. </h4>
+                </div>
+                <div class="column">
+                    <div class="container-roda"></div>
+                    <h4 class="text-roda">Encontre uma Máquina de Lavar
+                        próxima a sua residência. </h4>
+                </div>
+                <div class="column">
+                    <div class="container-roda"></div>
+                    <h4 class="text-roda">Encontre uma Máquina de Lavar
+                        próxima a sua residência. </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-novidades">
+        <div class="container">
+            <h2 class="title-novidades">Fique por dentro das novidades</h2>
+            <h3 class="subtitle-novidades">Inscreva-se para receber nossas promoções, cupons e noosas dicas, foi tudo
+                pensado para você não ficar por fora de nenhuma novidade!</h3>
+            <div class="row-novidades">
+                <input class="input-email" type="text">
+                <button class="button-novidades">INSCREVA-SE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/hamburguer_menu.js"></script>
+
+</body>
+
+</html>

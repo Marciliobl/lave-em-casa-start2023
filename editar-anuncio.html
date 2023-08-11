@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Anúncio</title>
+    <link rel="stylesheet" href="style/telas/editar_anuncio_style.css">
+</head>
+
+<body>
+    <h1>Editar Anúncio</h1>
+
+    <div id="editarAnuncioForm">
+        <div class="form-group">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="valorLavagem">Valor de Lavagem:</label>
+            <input type="number" id="valorLavagem" name="valorLavagem" step="0.01" required>
+        </div>
+
+        <button onclick="salvarEdicao()">Salvar</button>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <script>
+        // Função para obter o ID do proprietário e do anúncio da URL
+        function obterIdsAnuncio() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const proprietarioId = parseInt(urlParams.get('proprietarioId'));
+            const anuncioId = parseInt(urlParams.get('anuncioId'));
+
+            return { proprietarioId, anuncioId };
+        }
+
+        // Função para obter os dados do anúncio da API via Fetch
+        function obterDadosAnuncio(anuncioId) {
+            return fetch(`http://localhost:8080/anuncios/${anuncioId}`)
+                .then(function (response) {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('Erro na requisição');
+                    }
+                });
+        }
+
+        // Função para preencher o formulário com os dados do anúncio
+        function preencherFormulario(anuncio) {
+            document.getElementById('titulo').value = anuncio.titulo;
+            document.getElementById('descricao').value = anuncio.descricao;
+            document.getElementById('valorLavagem').value = anuncio.valorLavagem;
+            
+        }
+
+        // Função para salvar a edição do anúncio
+        function salvarEdicao() {
+            var idsAnuncio = obterIdsAnuncio();
+            var proprietarioId = idsAnuncio.proprietarioId;
+            var anuncioId = idsAnuncio.anuncioId;
+
+            // Obter os dados do formulário
+            var titulo = document.getElementById('titulo').value;
+            var descricao = document.getElementById('descricao').value;
+            var valorLavagem = parseFloat(document.getElementById('valorLavagem').value);
+
+            // Montar o objeto do anúncio atualizado
+            var anuncioAtualizado = {
+                id: anuncioId,
+                titulo: titulo,
+                descricao: descricao,
+                valorLavagem: valorLavagem
+            };
+
+            // Enviar a requisição PUT para a API via Fetch
+            fetch(`http://localhost:8080/anuncios/${proprietarioId}/${anuncioId}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(anuncioAtualizado)
+                })
+                .then(function (response) {
+                    if (response.ok) {
+                        alert('Anúncio atualizado com sucesso!');
+                        window.location.href = 'index.html';
+                    } else {
+                        throw new Error('Erro na requisição');
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Erro na requisição:', error);
+                });
+        }
+
+        // Função para voltar para a tela de anúncios criados
+        function voltar() {
+            window.location.href = 'index.html';
+        }
+
+        // Carregar os dados do anúncio a ser editado
+        var idsAnuncio = obterIdsAnuncio();
+        var anuncioId = idsAnuncio.anuncioId;
+        obterDadosAnuncio(anuncioId)
+            .then(function (anuncio) {
+                preencherFormulario(anuncio);
+            })
+            .catch(function (error) {
+                console.error('Erro na requisição:', error);
+            });
+    </script>
+</body>
+
+</html>
